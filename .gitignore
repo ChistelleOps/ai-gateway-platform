@@ -1,0 +1,16 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfplan
+crash.log
+
+# Secrets
+.env
+*.pem
+kubeconfig*
+
+# OS / editor
+.DS_Store
+.vscode/
