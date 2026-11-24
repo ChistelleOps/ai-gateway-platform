@@ -5,6 +5,7 @@
 *.tfvars
 *.tfplan
 crash.log
+backend.hcl
 
 # Secrets
 .env
