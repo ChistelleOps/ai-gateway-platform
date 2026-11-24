@@ -8,3 +8,7 @@ variable "project" {
   type        = string
   default     = "ai-gateway"
 }
+variable "budget_alert_emails" {
+  description = "emails used for the budget alert"
+  type        = list(string)
+}
