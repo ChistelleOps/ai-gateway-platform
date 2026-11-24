@@ -1,5 +1,5 @@
 variable "region" {
-  description = " AWS region for the state bucket"
+  description = " AWS region"
   type        = string
   default     = "us-east-1"
 }
