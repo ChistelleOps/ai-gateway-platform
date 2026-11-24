@@ -13,6 +13,7 @@ resource "aws_s3_bucket" "state" {
     Project   = var.project
     ManagedBy = "terraform"
     Purpose   = "terraform-state"
+    Owner     = "christelle"
   }
 }
 
