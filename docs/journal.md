@@ -8,7 +8,6 @@
 - Created project board and Sprint 1 issues (#1-#7)
 - Tomorrow 5:00: Terraform remote state (#1) and budget alert (#2)
 
-
 ## Tue 11/24 — Ticket #1 remote state
 - State migrated to S3 (bootstrap/terraform.tfstate). Plan = No changes.
 - envs/dev backend initialized (key envs/dev/terraform.tfstate).
