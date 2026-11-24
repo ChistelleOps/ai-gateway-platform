@@ -14,3 +14,13 @@
 - Lock test: terraform console did not block. Held the lock with apply at the
   approval prompt instead. Second plan got 412 PreconditionFailed + Lock Info.
   .tflock file seen in S3, then released automatically.
+
+## Tue 11/24 — Ticket #2 budget import
+- Budget "billing-Budget" ($10/month) was created by hand in the console.
+- Imported with an import block + plan -generate-config-out.
+- Cleaned the generated draft: removed computed attributes (arn, id, tags_all),
+  account ID, and moved the email to a variable (terraform.tfvars, gitignored).
+- Plan = 1 to import, 0 to change. Then No changes.
+- prevent_destroy tested with plan -destroy: blocked.
+
+
