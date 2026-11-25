@@ -14,6 +14,9 @@ resource "aws_ecr_repository" "container_security_lab" {
   image_scanning_configuration {
     scan_on_push = true
   }
+  lifecycle {
+    prevent_destroy = true
+  }
 }
 
 # Scan every repo in the registry on push (needed for OCI image indexes)

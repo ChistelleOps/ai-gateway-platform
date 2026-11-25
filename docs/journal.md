@@ -23,4 +23,8 @@
 - Plan = 1 to import, 0 to change. Then No changes.
 - prevent_destroy tested with plan -destroy: blocked.
 
+- Imported 5 CI resources (ECR repo, scan config, OIDC provider, role, inline policy). OIDC url needed https://.
+- Re-ran the pipeline: Trivy caught a new HIGH CVE (libzstd1). Switched to apt-get upgrade in the runtime stage. Green, pushed to ECR via OIDC.
+- Found Lambda scratch files: possible unmanaged resources, to check.
+
 

@@ -1,5 +1,3 @@
-data "aws_caller_identity" "current" {}
-
 import {
   to = aws_ecr_repository.container_security_lab
   id = "container-security-lab"
