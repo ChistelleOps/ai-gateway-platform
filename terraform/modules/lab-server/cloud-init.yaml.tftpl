@@ -1,6 +1,10 @@
 #cloud-config
 hostname: ${hostname}
 prefer_fqdn_over_hostname: false
+swap:
+  filename: /swapfile
+  size: 4G
+  maxsize: 4G
 package_update: true
 packages:
   - docker

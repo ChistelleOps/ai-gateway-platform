@@ -23,4 +23,11 @@
 - Plan = 1 to import, 0 to change. Then No changes.
 - prevent_destroy tested with plan -destroy: blocked.
 
+## Fri 11/27 — Day 4
+- 4G swap via cloud-init (new server, hostname still OK).
+- Docker redo: layers, namespaces, user network DNS, volumes.
+- Ollama: 2 models, cold start 6.0s vs warm 2.1s, token usage.
+- LiteLLM + Postgres + Redis + Ollama with Compose: all healthy,
+  chat through the gateway, fallback tested, spend logged in Postgres.
+
 
